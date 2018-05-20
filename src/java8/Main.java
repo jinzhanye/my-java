@@ -1,3 +1,5 @@
+package java8;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
@@ -48,6 +50,7 @@ public class Main {
     }
 
     // Consumer 用于接收一个对象进行处理但没有返回
+    // "<>"里放一个Map或者对象实现多参数传递
     public static void simpleCallback(Consumer<String> callback) {
         try {
             Thread.sleep(1);
@@ -63,4 +66,7 @@ public class Main {
         demo03();
         simpleCallback(msg -> System.out.println(msg));
     }
+
+//    参考
+//    https://www.ibm.com/developerworks/cn/java/j-java8idioms5/index.html?ca=drs-
 }
